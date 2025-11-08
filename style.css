@@ -1,0 +1,305 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #003e54;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-page{
+    height: 50vw;
+}
+
+/* Work sans (Header)
+Scandia (Sub) */
+
+.container {
+    color: #999999 ;
+    display: flex;
+}
+
+h1, h2{
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+}
+
+p{
+    font-family: "scandia", sans-serif;
+    text-decoration: none;
+}
+
+hr{
+    width: 30vw;
+    height: 0.2vw;
+    background-color: #999999;
+    border: none;
+}
+
+.headers h1{
+    color: #f5f5f5;
+    font-size: 3vw;
+    text-align: center;
+    margin: 0;
+}
+
+.headers h2{
+    color: #f5f5f5;
+    font-size: 2vw;
+    text-align: center; 
+    margin-top: 0;
+}
+
+.headers p{
+    padding: 2vw 8vw 0 8vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.headers img{
+    display: block;
+    margin: 5vw auto;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    object-fit:cover;  
+    aspect-ratio: 16 / 9;
+    margin-bottom: 2vw;
+}
+
+.button-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-resume button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 12%;
+    height: 2.5vw;
+    border-radius:1vw;
+    background-color: #f5f5f5;
+    /* padding: 0.6vw; */
+    font-family: "Work Sans";
+    font-size: 1vw;
+    border: #f5f5f5;
+    margin: 2.5vw;
+    cursor: pointer;
+    letter-spacing: 0.1vw;
+}
+
+.button-resume button:hover{
+    background-color: #006286;
+    color: #f5f5f5;
+}
+
+.projects{
+    height: 50vw;
+    background-color: white;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heads{
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 2vw;
+    color: #003e54;
+}
+
+.heads p{
+    color:#999999;
+}
+
+.card {
+    border: 0.2vw solid #003e54;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    color: #003e54;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #003e54;
+    color: #f5f5f5;
+    
+}
+
+.card-body {
+  font-size: 1vw;
+  width: auto; /* Let Bootstrap control card width */
+  text-align: left;
+  margin: 1vw;
+}
+
+.card-body h1{
+    text-align: center;
+}
+
+.projects .row {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+  padding: 3vw;
+}
+
+.contacts{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headings{
+    font-size: 1.5vw;
+    padding: 2vw;
+    color: #f5f5f5;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.headings h3{
+    font: "Scandia";
+    font-size: 1.5vw;
+}
+
+.headings hr{
+    margin-top: 1vw;
+}
+
+.informations {
+    display: flex;       
+    gap: 4vw;             
+    align-items: center;    
+    margin: 4vw;
+}
+
+.icon {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #006286; 
+    border-radius: 50%;      
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: #007ba7;
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+.icon img {
+    width: 2vw;            
+    height: auto;  
+}
+
+.forms {
+    background-color: #002532;
+    width: 25vw;
+    height: 38vw;
+    border-radius: 3vw;   
+    border: none;
+}
+
+.forms h3{
+    font-family: "Work Sans";
+    color: #ffffff;
+    font-size: 1.7dvw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2vw;
+    gap: 1.5vw;
+}
+
+label{
+    display: flex;
+    padding: auto 1vw ;
+    color: #999999;
+    font-family: "Work Sans";
+    font-size: 1.4vw;
+}
+
+textarea[id=message]{
+    /* color: #003e54; */
+    height: 7vw;
+    border-radius: 1vw;
+    width: auto;
+    height: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    font-family: "Scandia";
+    font-size: 1.5vw;
+    resize: none;
+}
+input{
+    width: 30vw;
+    height: 3vw;
+    border-radius: 1vw;
+    border: none;
+    display: flex;
+}
+
+input[type=text]{
+    border: none;
+    width: auto;
+    display: inline-block;
+    /* color: #003e54; */
+    text-align:start;
+    resize: none;
+    font-size: 1.5vw;
+    font-family: "Scandia";
+    padding-left: 1vw;    
+}
+
+input[type=submit]{
+    background-color: #003e54;
+    color: #f5f5f5;
+    width: 40%;
+    height: 3vw;
+    border: none;
+    font-family: "Scandia";
+    font-size: 1.5vw;
+    display: block;
+    margin: 0 auto; /* centers horizontally */
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #007ba7;
+}
+
+.footers {
+    /* height: 3vw; */
+    background-color: #f5f5f5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("Work_Sans/static/WorkSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Scandia";
+  src: url("scandia/fonts/fonnts.com-Scandia_Line_Medium.otf");
+}

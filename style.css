@@ -152,11 +152,12 @@ a {
 
 .card-body h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
 }
 .card-body p{
-    text-align: center;
-    font-size: 1.5rem;
+    text-align: left;
+    font-size: 1vw;
 }
 
 .projects .row {
@@ -176,7 +177,7 @@ a {
 }
 .contacts .headings h1 {
     font-size: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5vw;
 }
 
 .headings{
@@ -187,6 +188,7 @@ a {
     display: flex;
     text-align: center;
     flex-direction: column;
+    /* margin-bottom: vw; */
 }
 
 .forms h3{
@@ -194,10 +196,6 @@ a {
     color: #ffffff;
     font-size: 1.5vw;
     margin-top: 2.5vw;
-}
-
-.headings hr{
-    margin-top: -3rem;
 }
 
 .headings h3{
@@ -251,7 +249,7 @@ a {
     border-radius: 3vw;   
     border: none;
     display: block;
-    margin-top: 3vw;
+    margin-top: -3vw;
 }
 
 form{

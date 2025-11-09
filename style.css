@@ -9,11 +9,8 @@ body{
 }
 
 .landing-page{
-    height: 50vw;
+    height: auto;
 }
-
-/* Work sans (Header)
-Scandia (Sub) */
 
 .container {
     color: #999999 ;
@@ -69,22 +66,21 @@ hr{
 }
 
 .button-resume {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-resume button{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 12%;
-    height: 2.5vw;
+    width: 15%;
+    height: 3vw;
     border-radius:1vw;
     background-color: #f5f5f5;
-    /* padding: 0.6vw; */
     font-family: "Work Sans";
-    font-size: 1vw;
+    font-size: 1.5vw;
     border: #f5f5f5;
     margin: 2.5vw;
     cursor: pointer;
@@ -97,9 +93,13 @@ hr{
 }
 
 .projects{
-    height: 50vw;
+    height: auto;
     background-color: white;
     display: flex;
+}
+
+.projects h1{
+    font-size: 2vw;
 }
 
 a {
@@ -113,8 +113,14 @@ a {
     color: #003e54;
 }
 
+.heads h1{
+    font-size: 2vw;
+}
+
 .heads p{
     color:#999999;
+    font-size: 1vw;
+    text-align: left;
 }
 
 .card {
@@ -140,6 +146,7 @@ a {
 
 .card-body h1{
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .projects .row {
@@ -150,12 +157,16 @@ a {
   padding: 3vw;
 }
 
-.contacts{
+.contacts {
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.contacts .headings h1 {
+    font-size: 2vw;
+    margin-bottom: 5vw;
 }
 
 .headings{
@@ -168,30 +179,39 @@ a {
     flex-direction: column;
 }
 
-.headings h3{
-    font: "Scandia";
-    font-size: 1.5vw;
+.forms h3{
+    font-family: "Work Sans";
+    color: #ffffff;
+    font-size: 1.5dvw;
+    margin-top: 2.5vw;
 }
 
 .headings hr{
-    margin-top: 1vw;
+    margin-top: -3vw;
+}
+
+.headings h3{
+    margin-top: 3vw;
+    font-family: "Work Sans";
 }
 
 .informations {
     display: flex;       
     gap: 4vw;             
     align-items: center;    
-    margin: 4vw;
+    margin: 2vw;
+    /* position: relative; */
+    /* display: inline-block; */
 }
 
 .icon {
     width: 3.5vw;
     height: 3.5vw;
-    background-color: #006286; 
-    border-radius: 50%;      
+    background-color: #006286;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -200,31 +220,37 @@ a {
     filter: invert(100%) hue-rotate(180deg);
 }
 
+.icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .icon img {
-    width: 2vw;            
-    height: auto;  
+  width: 2vw;
+  height: auto;
+  pointer-events: none;
 }
 
 .forms {
     background-color: #002532;
     width: 25vw;
-    height: 38vw;
+    height: 35vw;
     border-radius: 3vw;   
     border: none;
-}
-
-.forms h3{
-    font-family: "Work Sans";
-    color: #ffffff;
-    font-size: 1.7dvw;
+    display: block;
+    margin-top: 3vw;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 2vw;
+    padding: 0 2vw 0 2vw;
     gap: 1.5vw;
+    height: auto;
 }
 
 label{
@@ -232,7 +258,7 @@ label{
     padding: auto 1vw ;
     color: #999999;
     font-family: "Work Sans";
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 textarea[id=message]{
@@ -244,7 +270,7 @@ textarea[id=message]{
     padding-top: 0.5vw;
     padding-left: 1vw;
     font-family: "Scandia";
-    font-size: 1.5vw;
+    font-size: 1vw;
     resize: none;
 }
 input{
@@ -265,16 +291,17 @@ input[type=text]{
     font-size: 1.5vw;
     font-family: "Scandia";
     padding-left: 1vw;    
+    font-size: 1vw;
 }
 
 input[type=submit]{
     background-color: #003e54;
     color: #f5f5f5;
-    width: 40%;
-    height: 3vw;
+    width: 25%;
+    height: 2vw;
     border: none;
     font-family: "Scandia";
-    font-size: 1.5vw;
+    font-size: 1vw;
     display: block;
     margin: 0 auto; /* centers horizontally */
     text-align: center;
@@ -302,4 +329,69 @@ input[type=submit]:hover {
 @font-face {
   font-family: "Scandia";
   src: url("scandia/fonts/fonnts.com-Scandia_Line_Medium.otf");
+}
+
+/* Tablets and smaller */
+@media (max-width: 992px) {
+  .headers h1 {
+    font-size: 1rem;
+  }
+
+  .headers h2 {
+    font-size: 0.5rem;
+  }
+
+  .headers p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+}
+
+/* Phones and small screens */
+@media (max-width: 768px) {
+  .landing-page {
+    padding: 3rem 1rem;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .projects .card-body {
+    text-align: center;
+  }
+
+  .contacts h1 {
+    font-size: 1.8rem;
+  }
+
+  form input, form textarea {
+    width: 100%;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  .headers h1 {
+    font-size: 1.6rem;
+  }
+
+  .headers h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
 }

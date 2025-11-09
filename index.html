@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- LAnding page -->
     <section class="landing-page">
         <div class="container">
             <div class="headers">
@@ -26,12 +27,14 @@
         </div>
     </section>
 
+
+    <!-- PROJECTS -->
     <section class="projects">
         <div class="container">
             <div class="heads">
                 <h1>Projects</h1>
                 <hr>
-                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                         <a href="https://cgolingay.github.io/christine-portfolio/" class="text-decoration-none">
                             <div class="card h-70">
@@ -93,20 +96,22 @@
         </div>
     </section>
 
+    <!-- CONTACTS -->
     <section class="contacts">
         <div class="container">
             <div class="headings">
                 <h1>Contact Information</h1>
+                <hr>
 
                 <div class="forms">
                     <h3>You can message here!</h3>
 
                     <form onsubmit="send_email(event)" method="post" >
                         <label for="name">Name</label>
-                        <input type="text" name="name"  placeholder="your name" id="name" required>
+                        <input type="text" name="name"  placeholder="Juan Dela Cruz" id="name" required>
 
                         <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="your email" id="email" required>
+                        <input type="text" name="email" placeholder="mail@example.com" id="email" required>
 
                         <label for="message">Message</label>
                         <textarea name="message" placeholder="your message" id="message" required></textarea>
@@ -116,31 +121,39 @@
                 </div>  
 
                 <h3>or</h3>
-                <hr>
-
+                
                 <div class="informations">
                     <div class="icon">
-                        <img src="images/email.png" alt="Email">
+                        <a href="mailto:christinegolingay0@gmail.com" target="_blank">
+                            <img src="images/email.png" alt="Email">
+                        </a>
                     </div>
 
                     <div class="icon">
-                        <img src="images/github.png" alt="Email">
+                        <a href="https://github.com/Cgolingay" target="_blank">
+                            <img src="images/github.png" alt="Email">
+                        </a>
                     </div>
 
                     <div class="icon">
-                        <img src="images/linkedin.png" alt="Email">
+                        <a href="https://www.linkedin.com/in/christine-golingay-6b9372305/" target="_blank">
+                            <img src="images/linkedin.png" alt="Email">
+                        </a>
                     </div>
 
                     <div class="icon">
-                        <img src="images/facebook.png" alt="Email">
+                        <a href="https://web.facebook.com/christine.golingay" target="_blank">
+                            <img src="images/facebook.png" alt="Email">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTERS -->
     <section class="footers">
-        <footer>
+        <footer class="text-center py-3">
             <p>All Rights Reserved.</p>
         </footer>
     </section>

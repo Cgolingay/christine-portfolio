@@ -113,14 +113,14 @@ a {
 
 .heads{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding: 2vw;
     color: #003e54;
 }
 
 .heads h1{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2vw;
+    margin-bottom: 1vw;
 }
 
 .heads p{

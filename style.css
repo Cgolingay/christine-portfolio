@@ -10,6 +10,9 @@ body{
 
 .landing-page{
     height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .container {
@@ -36,29 +39,29 @@ hr{
 
 .headers h1{
     color: #f5f5f5;
-    font-size: 3vw;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
 }
 
 .headers h2{
     color: #f5f5f5;
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center; 
     margin-top: 0;
 }
 
 .headers p{
     padding: 2vw 8vw 0 8vw;
-    font-size: 1.5vw;
+    font-size: 1rem;
     text-align: center;
 }
 
 .headers img{
     display: block;
     margin: 5vw auto;
-    width: 15vw;
-    height: 15vw;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     object-fit:cover;  
     aspect-ratio: 16 / 9;
@@ -75,12 +78,12 @@ hr{
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 15%;
-    height: 3vw;
-    border-radius:1vw;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
     background-color: #f5f5f5;
     font-family: "Work Sans";
-    font-size: 1.5vw;
+    font-size: 1rem;
     border: #f5f5f5;
     margin: 2.5vw;
     cursor: pointer;
@@ -96,10 +99,12 @@ hr{
     height: auto;
     background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects h1{
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 a {
@@ -108,13 +113,14 @@ a {
 
 .heads{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     padding: 2vw;
     color: #003e54;
 }
 
 .heads h1{
-    font-size: 2vw;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .heads p{
@@ -146,14 +152,18 @@ a {
 
 .card-body h1{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
+}
+.card-body p{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .projects .row {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3vw;
+  gap: 2rem;
   padding: 3vw;
 }
 
@@ -165,8 +175,8 @@ a {
     text-align: center;
 }
 .contacts .headings h1 {
-    font-size: 2vw;
-    margin-bottom: 5vw;
+    font-size: 2rem;
+    margin-bottom: 5rem;
 }
 
 .headings{
@@ -182,12 +192,12 @@ a {
 .forms h3{
     font-family: "Work Sans";
     color: #ffffff;
-    font-size: 1.5dvw;
+    font-size: 1.5vw;
     margin-top: 2.5vw;
 }
 
 .headings hr{
-    margin-top: -3vw;
+    margin-top: -3rem;
 }
 
 .headings h3{
@@ -237,7 +247,7 @@ a {
 .forms {
     background-color: #002532;
     width: 25vw;
-    height: 35vw;
+    height: 37vw;
     border-radius: 3vw;   
     border: none;
     display: block;
@@ -304,7 +314,10 @@ input[type=submit]{
     font-size: 1vw;
     display: block;
     margin: 0 auto; /* centers horizontally */
+    padding: 0.3vw;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 

@@ -131,7 +131,7 @@ a {
 
 .card {
     border: 0.2vw solid #003e54;
-    padding: 0.5vw;
+    padding: 0.5rem;
     border-radius: 1vw;
     color: #003e54;
     cursor: pointer;
@@ -144,7 +144,7 @@ a {
 }
 
 .card-body {
-  font-size: 1vw;
+  font-size: 1rem;
   width: auto; /* Let Bootstrap control card width */
   text-align: left;
   margin: 1vw;
@@ -152,12 +152,12 @@ a {
 
 .card-body h1{
     text-align: center;
-    font-size: 1.5vw;
-    margin-bottom: 2vw;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 .card-body p{
     text-align: left;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .projects .row {
@@ -176,12 +176,12 @@ a {
     text-align: center;
 }
 .contacts .headings h1 {
-    font-size: 2vw;
+    font-size: 1.7rem;
     margin-bottom: 5vw;
 }
 
 .headings{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     padding: 2vw;
     color: #f5f5f5;
     align-items: center;
@@ -194,27 +194,27 @@ a {
 .forms h3{
     font-family: "Work Sans";
     color: #ffffff;
-    font-size: 1.5vw;
-    margin-top: 2.5vw;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
 }
 
 .headings h3{
-    margin-top: 3vw;
+    margin-top: 3rem;
     font-family: "Work Sans";
 }
 
 .informations {
     display: flex;       
-    gap: 4vw;             
+    gap: 4rem;             
     align-items: center;    
-    margin: 2vw;
+    margin: 2rem;
     /* position: relative; */
     /* display: inline-block; */
 }
 
 .icon {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: #006286;
     border-radius: 50%;
     display: flex;
@@ -237,54 +237,53 @@ a {
 }
 
 .icon img {
-  width: 2vw;
+  width: 2rem;
   height: auto;
   pointer-events: none;
 }
 
 .forms {
     background-color: #002532;
-    width: 25vw;
-    height: 37vw;
-    border-radius: 3vw;   
+    width: 20rem;
+    height: auto;
+    border-radius: 3rem;   
     border: none;
     display: block;
-    margin-top: -3vw;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 0 2vw 0 2vw;
-    gap: 1.5vw;
+    padding: 0 2rem 0 2rem;
+    gap: 1.1rem;
     height: auto;
 }
 
 label{
     display: flex;
-    padding: auto 1vw ;
+    padding: auto 1rem ;
     color: #999999;
     font-family: "Work Sans";
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 textarea[id=message]{
     /* color: #003e54; */
-    height: 7vw;
-    border-radius: 1vw;
+    height: 7rem;
+    border-radius: 1rem;
     width: auto;
-    height: 5vw;
-    padding-top: 0.5vw;
-    padding-left: 1vw;
+    height: 5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
     font-family: "Scandia";
-    font-size: 1vw;
+    font-size: 1rem;
     resize: none;
 }
 input{
-    width: 30vw;
-    height: 3vw;
-    border-radius: 1vw;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 1rem;
     border: none;
     display: flex;
 }
@@ -296,27 +295,28 @@ input[type=text]{
     /* color: #003e54; */
     text-align:start;
     resize: none;
-    font-size: 1.5vw;
+    font-size: 1rem;
     font-family: "Scandia";
-    padding-left: 1vw;    
-    font-size: 1vw;
+    padding-left: 1rem;    
+
 }
 
 input[type=submit]{
     background-color: #003e54;
     color: #f5f5f5;
     width: 25%;
-    height: 2vw;
+    height: 2rem;
     border: none;
     font-family: "Scandia";
-    font-size: 1vw;
+    font-size: 1rem;
     display: block;
     margin: 0 auto; /* centers horizontally */
-    padding: 0.3vw;
+    padding: 0.3rem;
     text-align: center;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 input[type=submit]:hover {
@@ -369,19 +369,25 @@ input[type=submit]:hover {
   }
 
   .card-body h1{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 }
 
+/* bigger screen */
 @media (max-width: 1280px) {
   .card-body h1{
-    font-size: 0.2rem;
+    font-size: 1rem;
   }
 
   .headers img {
     width: 6rem;
     height: 6rem;
   }
+
+  .contacts .headings h1 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
 }
 
 
@@ -438,12 +444,22 @@ input[type=submit]:hover {
 
   form input, form textarea {
     width: 100%;
+    height: 100%;
+  }
+
+  .headings h1{
+    font-size: 0.5rem;
   }
 
   .contact-icon {
     width: 40px;
     height: 40px;
   }
+
+  .contacts .headings h1 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
 }
 
 /* Extra small screens (below 480px) */
@@ -479,16 +495,27 @@ input[type=submit]:hover {
 
   .card-body h1{
     text-align: center;
-    font-size: 0.8rem;
-    margin-bottom: 2vw;
+    font-size: 0.5rem;
+    margin-bottom: 2rem;
 }
 
   .heads h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .card-body p{
     text-align: left;
     font-size: 0.5rem;
   }
+
+  form input, form textarea {
+    width: 100%;
+  }
+
+  .contacts .headings h1 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+
 }

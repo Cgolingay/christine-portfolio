@@ -59,13 +59,13 @@ hr{
 
 .headers img{
     display: block;
-    margin: 5vw auto;
-    width: 15rem;
+    margin: 5vw auto 2vw auto;
+    width: 15rem; 
     height: 15rem;
     border-radius: 50%;
     object-fit:cover;  
     aspect-ratio: 16 / 9;
-    margin-bottom: 2vw;
+
 }
 
 .button-resume {
@@ -79,7 +79,7 @@ hr{
     align-items: center;
     display: flex;
     width: auto;
-    height: auto;
+    height: 2rem;
     border-radius: 0.5rem;
     background-color: #f5f5f5;
     font-family: "Work Sans";
@@ -113,13 +113,13 @@ a {
 
 .heads{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     padding: 2vw;
     color: #003e54;
 }
 
 .heads h1{
-    font-size: 2vw;
+    font-size: 2rem;
     margin-bottom: 1vw;
 }
 
@@ -176,7 +176,7 @@ a {
     text-align: center;
 }
 .contacts .headings h1 {
-    font-size: 2rem;
+    font-size: 2vw;
     margin-bottom: 5vw;
 }
 
@@ -344,33 +344,92 @@ input[type=submit]:hover {
 
 /* Tablets and smaller */
 @media (max-width: 992px) {
+
+
   .headers h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .headers h2 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .headers p {
     font-size: 1rem;
     padding: 0 20px;
   }
+
+  .headers img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .heads h1{
+    font-size: 1rem;
+  }
+
+  .card-body h1{
+    font-size: 2rem;
 }
+}
+
+@media (max-width: 1280px) {
+  .card-body h1{
+    font-size: 0.2rem;
+  }
+
+  .headers img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
 
 /* Phones and small screens */
 @media (max-width: 768px) {
-  .landing-page {
+  /* .landing-page {
     padding: 3rem 1rem;
+  } */
+
+  .headers img {
+    width: 6rem;
+    height: 6rem;
   }
 
-  .profile-pic {
-    width: 140px;
-    height: 140px;
+  .headers h1 {
+    font-size: 1.5rem;
   }
 
-  .projects .card-body {
+  .headers h2 {
+    font-size: 1rem;
+  }
+
+  .projects .row {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .button-resume button {
+    font-size: 0.5rem;
+    height: 1rem;
+    /* padding: 8px 12px; */
+  }
+
+  .card-body h1{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2vw;
+}
+
+  .heads h1{
+    font-size: 1rem;
+  }
+
+  .card-body p{
+    text-align: left;
+    font-size: 0.5rem;
   }
 
   .contacts h1 {
@@ -397,6 +456,11 @@ input[type=submit]:hover {
     font-size: 1rem;
   }
 
+  .headers img {
+    width: 6rem;
+    height: 6rem;
+  }
+
   p {
     font-size: 0.95rem;
   }
@@ -404,5 +468,27 @@ input[type=submit]:hover {
   .btn-lg {
     font-size: 1rem;
     padding: 10px 16px;
+  }
+
+  .projects .row {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-body h1{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 2vw;
+}
+
+  .heads h1{
+    font-size: 1rem;
+  }
+
+  .card-body p{
+    text-align: left;
+    font-size: 0.5rem;
   }
 }

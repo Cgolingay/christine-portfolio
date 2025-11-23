@@ -52,7 +52,7 @@ hr{
 }
 
 .headers p{
-    padding: 2vw 8vw 0 8vw;
+    padding: 2rem 8rem 0 8rem;
     font-size: 1rem;
     text-align: center;
 }
@@ -182,7 +182,7 @@ a {
 
 .headings{
     font-size: 1.5rem;
-    padding: 2vw;
+    padding: 2rem;
     color: #f5f5f5;
     align-items: center;
     display: flex;
@@ -232,8 +232,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .icon img {
@@ -371,6 +371,23 @@ input[type=submit]:hover {
   .card-body h1{
     font-size: 1rem;
 }
+
+  .contacts .headings h1 {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+form{
+  width: auto;
+}
+
+.forms {
+    width: 12rem;
+}
+
+.forms h3{
+    font-size: 1rem;
+}
 }
 
 /* bigger screen */
@@ -385,8 +402,8 @@ input[type=submit]:hover {
   }
 
   .contacts .headings h1 {
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 }
 
@@ -405,6 +422,7 @@ input[type=submit]:hover {
   .headers h1 {
     font-size: 1.5rem;
   }
+
 
   .headers h2 {
     font-size: 1rem;
@@ -447,6 +465,10 @@ input[type=submit]:hover {
     height: 100%;
   }
 
+  form{
+    padding: 0 1rem 0 1rem;
+  }
+
   .headings h1{
     font-size: 0.5rem;
   }
@@ -457,9 +479,42 @@ input[type=submit]:hover {
   }
 
   .contacts .headings h1 {
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
+
+.forms {
+    width: 10rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms h3{
+    font-size: 1rem;
+}
+
+input[type=submit]{
+    width: 50%;
+}
+
+input[type=text]{
+    width: 75%;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 0.7rem;
+}
+
+textarea[id=message]{
+    font-size: 0.7rem;
+    width: 75%;
+}
+
+
 }
 
 /* Extra small screens (below 480px) */
@@ -513,9 +568,74 @@ input[type=submit]:hover {
   }
 
   .contacts .headings h1 {
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 
+.forms {
+    width: 10rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms h3{
+    font-size: 0.8rem;
+}
+
+input[type=submit]{
+    width: 50%;
+}
+
+input[type=text]{
+    width: 85%;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 0.7rem;
+}
+
+textarea[id=message]{
+    font-size: 0.7rem;
+    width: 85%;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #006286;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.icon img {
+  width: 1rem;
+  height: auto;
+  pointer-events: none;
+}
+
+
+.informations {
+    display: flex;       
+    gap: 1rem;             
+    align-items: center;    
+    margin: 2rem;
+    /* position: relative; */
+    /* display: inline-block; */
+}
 
 }
